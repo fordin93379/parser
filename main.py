@@ -4,6 +4,7 @@ import xlsxwriter
 
 workbook = xlsxwriter.Workbook('hello.xlsx')
 worksheet = workbook.add_worksheet()
+
 url = 'https://store.micropython.org/'
 r = requests.get(url)
 html = BeautifulSoup(r.text, 'html.parser')
